@@ -78,18 +78,20 @@ export const productType = defineType({
       },
     }),
     defineField({
-      name: "variant",
-      title: "Product Type",
-      type: "string",
-      options: {
-        list: [
-          { title: "Gadget", value: "gadget" },
-          { title: "Appliances", value: "appliances" },
-          { title: "Refrigerators", value: "refrigerators" },
-          { title: "Others", value: "others" },
-        ],
-      },
-    }),
+  name: "variant",
+  title: "Product Type",
+  type: "string",
+  options: {
+    list: [
+      { title: "Chichas", value: "chichas" },
+      { title: "Saveurs", value: "saveurs" },
+      { title: "E-Puffs", value: "e-puffs" },
+      { title: "Consommables", value: "consommables" },
+      { title: "Accessoires", value: "accessoires" },
+      { title: "Hygiène & soins", value: "hygiene-soins" },
+    ],
+  },
+}),
     defineField({
       name: "isFeatured",
       title: "Featured Product",

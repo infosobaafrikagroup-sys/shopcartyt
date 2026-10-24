@@ -1,9 +1,9 @@
 import { defineQuery } from "next-sanity";
 
-const BRANDS_QUERY = defineQuery(`*[_type=='brand'] | order(name asc) `);
+const BRANDS_QUERY = defineQuery(`*[_type=='brand'] | order(title asc) `);
 
 const LATEST_BLOG_QUERY = defineQuery(
-  ` *[_type == 'blog' && isLatest == true]|order(name asc){
+  ` *[_type == 'blog' && isLatest == true]|order(title asc){
       ...,
       blogcategories[]->{
       title
@@ -12,13 +12,13 @@ const LATEST_BLOG_QUERY = defineQuery(
 );
 
 const DEAL_PRODUCTS = defineQuery(
-  `*[_type == 'product' && status == 'hot'] | order(name asc){
+  `*[_type == 'product' && status == 'hot'] | order(title asc){
     ...,"categories": categories[]->title
   }`
 );
 
 const PRODUCT_BY_SLUG_QUERY = defineQuery(
-  `*[_type == "product" && slug.current == $slug] | order(name asc) [0]`
+  `*[_type == "product" && slug.current == $slug] | order(title asc) [0]`
 );
 
 const BRAND_QUERY = defineQuery(`*[_type == "product" && slug.current == $slug]{
