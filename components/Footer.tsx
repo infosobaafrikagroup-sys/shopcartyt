@@ -18,8 +18,8 @@ const Footer = () => {
           <div className="space-y-4">
             <Logo />
             <SubText>
-              Discover curated furniture collections at Shopcartyt, blending
-              style and comfort to elevate your living spaces.
+              Shishas et accessoires de qualité, pour des moments <br />
+              <span>de détente inoubliables chez Elite Shisha Shop</span>
             </SubText>
             <SocialMedia
               className="text-darkColor/60"
@@ -28,7 +28,7 @@ const Footer = () => {
             />
           </div>
           <div>
-            <SubTitle>Quick Links</SubTitle>
+            <SubTitle>Liens utiles</SubTitle>
             <ul className="space-y-3 mt-4">
               {quickLinksData?.map((item) => (
                 <li key={item?.title}>
@@ -60,19 +60,22 @@ const Footer = () => {
           <div className="space-y-4">
             <SubTitle>Newsletter</SubTitle>
             <SubText>
-              Subscribe to our newsletter to receive updates and exclusive
-              offers
+              Abonnez-vous à notre newsletter pour recevoir nos actualités et nos
+              offres exclusives
             </SubText>
             <form className="space-y-3">
-              <Input placeholder="Enter your email" type="email" required />
-              <Button className="w-full">Subscribe</Button>
+              <Input placeholder="Saisissez votre email" type="email" required />
+              <Button className="w-full">Souscrire</Button>
             </form>
           </div>
         </div>
         <div className="py-6 border-t text-center text-sm text-gray-600">
-          <div>
-            © {new Date().getFullYear()} <Logo className="text-sm" />. All
-            rights reserved.
+          <div className="flex items-center justify-center gap-0">
+            <span>© {new Date().getFullYear()}</span>
+            <div className="h-6 flex items-center -mx-10">
+              <Logo className="origin-center scale-50" />
+            </div>
+            <span>Tous droits réservés.</span>
           </div>
         </div>
       </Container>

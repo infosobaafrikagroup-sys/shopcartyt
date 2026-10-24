@@ -6,25 +6,25 @@ export const headerData = [
   //   { title: "Contact", href: "/contact" },
 ];
 export const quickLinksData = [
-  { title: "About us", href: "/about" },
-  { title: "Contact us", href: "/contact" },
-  { title: "Terms & Conditions", href: "/terms" },
-  { title: "Privacy Policy", href: "/privacy" },
-  { title: "FAQs", href: "/faqs" },
-  { title: "Help", href: "/help" },
+  { title: "Boutique", href: "/about" },
+  { title: "Blog", href: "/contact" },
+  { title: "Promotions", href: "/terms" },
+  { title: "Contacts", href: "/privacy" },
+  { title: "FAQ", href: "/faqs" },
+  { title: "Centre d’aide", href: "/help" },
 ];
 export const categoriesData = [
   { title: "Chichas", href: "mobiles" },
-  { title: "Aromatiques", href: "appliances" },
+  { title: "Saveurs", href: "appliances" },
   { title: "E-Puffs", href: "smartphones" },
   { title: "Consommables", href: "air-conditioners" },
   { title: "Accessoires", href: "washing-machine" },
-  { title: "Kitchen Appliances", href: "kitchen-appliances" },
-  { title: "gadget accessories", href: "gadget-accessories" },
+  { title: "Hygiènes & soins", href: "kitchen-appliances" },
+  //{ title: "gadget accessories", href: "gadget-accessories" },
 ];
 export const productType = [
   { title: "Chichas", value: "gadget" },
-  { title: "Aromatiques", value: "appliances" },
+  { title: "Saveurs", value: "appliances" },
   { title: "E-Puffs", value: "refrigerators" },
   { title: "Consommables", value: "others" },
 ];

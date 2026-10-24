@@ -9,29 +9,29 @@ interface ContactItemData {
 
 const data: ContactItemData[] = [
   {
-    title: "Visit Us",
-    subtitle: "New Orlean, USA",
+    title: "Visitez-nous",
+    subtitle: "Togo - Côte d'Ivoire",
     icon: (
       <MapPin className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),
   },
   {
-    title: "Call Us",
-    subtitle: "+12 958 648 597",
+    title: "Appelez-nous",
+    subtitle: "+228 72 76 38 58 / +225 07 13 69 07 52",
     icon: (
       <Phone className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),
   },
   {
-    title: "Working Hours",
-    subtitle: "Mon - Sat: 10:00 AM - 7:00 PM",
+    title: "Nos heures d'ouverture",
+    subtitle: "Lun - Sam: 10:00 AM - 7:00 PM",
     icon: (
       <Clock className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),
   },
   {
-    title: "Email Us",
-    subtitle: "Shopcart@gmail.com",
+    title: "Ecrivez-nous",
+    subtitle: "sales.ess@obaafrikagroup.com",
     icon: (
       <Mail className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),
