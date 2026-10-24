@@ -1,8 +1,8 @@
 export const headerData = [
-  { title: "Home", href: "/" },
-  { title: "Shop", href: "/shop" },
+  { title: "Accueil", href: "/" },
+  { title: "Boutique", href: "/shop" },
   { title: "Blog", href: "/blog" },
-  { title: "Hot Deal", href: "/deal" },
+  { title: "Promotions", href: "/deal" },
   //   { title: "Contact", href: "/contact" },
 ];
 export const quickLinksData = [
@@ -14,17 +14,17 @@ export const quickLinksData = [
   { title: "Help", href: "/help" },
 ];
 export const categoriesData = [
-  { title: "Mobiles", href: "mobiles" },
-  { title: "Appliances", href: "appliances" },
-  { title: "Smartphones", href: "smartphones" },
-  { title: "Air Conditioners", href: "air-conditioners" },
-  { title: "Washing Machine", href: "washing-machine" },
+  { title: "Chichas", href: "mobiles" },
+  { title: "Aromatiques", href: "appliances" },
+  { title: "E-Puffs", href: "smartphones" },
+  { title: "Consommables", href: "air-conditioners" },
+  { title: "Accessoires", href: "washing-machine" },
   { title: "Kitchen Appliances", href: "kitchen-appliances" },
   { title: "gadget accessories", href: "gadget-accessories" },
 ];
 export const productType = [
-  { title: "Gadget", value: "gadget" },
-  { title: "Appliances", value: "appliances" },
-  { title: "Refrigerators", value: "refrigerators" },
-  { title: "Others", value: "others" },
+  { title: "Chichas", value: "gadget" },
+  { title: "Aromatiques", value: "appliances" },
+  { title: "E-Puffs", value: "refrigerators" },
+  { title: "Consommables", value: "others" },
 ];

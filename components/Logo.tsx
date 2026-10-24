@@ -1,33 +1,44 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import logo from "@/images/logo-elite.svg";
 
-const Logo = ({
-  className,
-  spanDesign,
-}: {
+interface LogoProps {
   className?: string;
-  spanDesign?: string;
-}) => {
+  imageClassName?: string;
+  showText?: boolean;
+}
+
+const Logo = ({ className, imageClassName, showText = true }: LogoProps) => {
   return (
-    <Link href={"/"} className="inline-flex">
-      <h2
+    <Link
+      href="/"
+      aria-label="Elite Shisha Shop – accueil"
+      className={cn(
+        "group inline-flex shrink-0 items-center gap-3 focus:outline-none",
+        className
+      )}
+    >
+      <Image
+        src={logo}
+        alt=""
+        priority
         className={cn(
-          "text-2xl text-shop_dark_green font-black tracking-wider uppercase hover:text-shop_light_green hoverEffect group font-sans",
-          className
+          "h-14 w-auto transition-transform duration-300 group-hover:scale-105 sm:h-[4.5rem]",
+          imageClassName
         )}
-      >
-        Shopcar
-        <span
-          className={cn(
-            "text-shop_light_green group-hover:text-shop_dark_green hoverEffect",
-            spanDesign
-          )}
-        >
-          t
+      />
+      {showText && (
+        <span className="hidden flex-col leading-none min-[420px]:flex">
+          <span className="text-xl font-black uppercase tracking-wider text-shop_dark_green hoverEffect group-hover:text-shop_light_green sm:text-2xl">
+            Elite
+          </span>
+          <span className="mt-1 hidden text-[11px] font-semibold uppercase tracking-[0.25em] text-lightColor sm:block">
+            Shisha Shop
+          </span>
         </span>
-      </h2>
+      )}
     </Link>
   );
 };
